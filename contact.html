@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkerConnect | Contact</title>
+  <meta name="description" content="Submit a service request through a clean, responsive contact form." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="WorkerConnect home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img" aria-label="WorkerConnect logo">
+            <rect x="6" y="8" width="36" height="32" rx="12" fill="currentColor" opacity="0.12"></rect>
+            <path d="M15 25.5L22 32.5L34 17.5" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </span>
+        <span>
+          <strong>WorkerConnect</strong>
+          <small>Local help, professionally listed</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section form-section">
+      <div class="container contact-layout">
+        <article class="contact-copy reveal-on-load">
+          <span class="eyebrow">Get in touch</span>
+          <h1>Request a worker in a few simple details.</h1>
+          <p>The form below uses centered layout, clear labels, subtle focus effects, and validation-friendly styling for a polished contact experience.</p>
+          <div class="contact-note card">
+            <strong>Need urgent help?</strong>
+            <p>Use the Services page to contact a worker directly through phone or WhatsApp for a faster response.</p>
+          </div>
+        </article>
+
+        <section class="contact-form-wrap card reveal-on-scroll" aria-labelledby="contact-form-title">
+          <h2 id="contact-form-title">Service request form</h2>
+          <form class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Enter your full name" required />
+              <small class="error-text">Please enter your name.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="Electrician">Electrician</option>
+                <option value="Plumber">Plumber</option>
+                <option value="Trainer">Trainer</option>
+              </select>
+              <small class="error-text">Please choose a service.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" pattern="[0-9]{10}" required />
+              <small class="error-text">Please enter a valid 10-digit phone number.</small>
+            </div>
+
+            <div class="form-field">
+              <label for="location">Location</label>
+              <input id="location" name="location" type="text" placeholder="Enter your area or city" required />
+              <small class="error-text">Please enter your location.</small>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Submit request</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 WorkerConnect. Built with clean structure, responsive layout, and practical usability.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

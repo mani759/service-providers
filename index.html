@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkerConnect | Trusted Local Services</title>
+  <meta name="description" content="Find trusted electricians, plumbers, and trainers through a clean, responsive local services website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="WorkerConnect home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img" aria-label="WorkerConnect logo">
+            <rect x="6" y="8" width="36" height="32" rx="12" fill="currentColor" opacity="0.12"></rect>
+            <path d="M15 25.5L22 32.5L34 17.5" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </span>
+        <span>
+          <strong>WorkerConnect</strong>
+          <small>Local help, professionally listed</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+        <a href="index.html" class="is-active">Home</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section">
+      <div class="container hero-grid reveal-on-load">
+        <div class="hero-copy">
+          <span class="eyebrow">Reliable neighborhood support</span>
+          <h1>Book skilled local workers through a clean and trusted experience.</h1>
+          <p>Explore verified service categories, browse worker listings, and connect instantly through phone or WhatsApp in a simple responsive interface.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="service.html">Browse workers</a>
+            <a class="btn btn-secondary" href="contact.html">Request a service</a>
+          </div>
+          <div class="hero-stats" role="list" aria-label="Quick highlights">
+            <article class="stat-card" role="listitem">
+              <strong>120+</strong>
+              <span>Service requests assisted</span>
+            </article>
+            <article class="stat-card" role="listitem">
+              <strong>3</strong>
+              <span>Popular categories</span>
+            </article>
+            <article class="stat-card" role="listitem">
+              <strong>24/7</strong>
+              <span>Quick contact access</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="hero-card card floating-card">
+            <span class="tag">Popular today</span>
+            <h2>Fast access to local experts</h2>
+            <p>Designed for homeowners, renters, and busy families who want clean, modern service discovery without clutter.</p>
+            <ul class="feature-list" role="list">
+              <li>Easy category-based browsing</li>
+              <li>Responsive worker cards</li>
+              <li>Instant WhatsApp contact button</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-preview">
+      <div class="container section-heading reveal-on-scroll">
+        <span class="eyebrow">Featured services</span>
+        <h2>Find the right professional for everyday needs.</h2>
+        <p>Each service category is presented with clear visual hierarchy, soft cards, and quick navigation to worker details.</p>
+      </div>
+
+      <div class="container service-grid">
+        <article class="service-card card reveal-on-scroll">
+          <div class="service-icon electrician-icon" aria-hidden="true">⚡</div>
+          <h3>Electrician</h3>
+          <p>Get help for wiring, repairs, installations, and appliance setup from trusted local electricians.</p>
+          <a href="service.html#electrician" class="text-link">View electricians</a>
+        </article>
+
+        <article class="service-card card reveal-on-scroll">
+          <div class="service-icon plumber-icon" aria-hidden="true">💧</div>
+          <h3>Plumber</h3>
+          <p>Browse plumbers for leak fixes, bathroom fitting, pipeline work, and routine maintenance support.</p>
+          <a href="service.html#plumber" class="text-link">View plumbers</a>
+        </article>
+
+        <article class="service-card card reveal-on-scroll">
+          <div class="service-icon trainer-icon" aria-hidden="true">🏋️</div>
+          <h3>Trainer</h3>
+          <p>Connect with personal trainers for home fitness, weight management, strength training, and motivation.</p>
+          <a href="service.html#trainer" class="text-link">View trainers</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section spotlight-section">
+      <div class="container spotlight-grid">
+        <article class="spotlight-card card reveal-on-scroll">
+          <span class="eyebrow">Why people choose us</span>
+          <h2>Simple layout, clear information, and contact-first design.</h2>
+          <p>This website uses semantic HTML, mobile-first responsive structure, reusable CSS classes, and subtle UI transitions to feel polished and real-world ready.</p>
+        </article>
+        <article class="highlight-panel reveal-on-scroll">
+          <div class="highlight-item card">
+            <strong>Responsive</strong>
+            <span>Optimized for mobile, tablet, and desktop screens.</span>
+          </div>
+          <div class="highlight-item card">
+            <strong>Modern UI</strong>
+            <span>Soft shadows, rounded cards, clean typography, and balanced spacing.</span>
+          </div>
+          <div class="highlight-item card">
+            <strong>Easy contact</strong>
+            <span>Quick links for phone and WhatsApp-based communication.</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 WorkerConnect. Clean local service discovery for modern communities.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkerConnect | Service Listings</title>
+  <meta name="description" content="Browse worker listings for electricians, plumbers, and trainers with phone and WhatsApp contact options." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="services">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="WorkerConnect home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img" aria-label="WorkerConnect logo">
+            <rect x="6" y="8" width="36" height="32" rx="12" fill="currentColor" opacity="0.12"></rect>
+            <path d="M15 25.5L22 32.5L34 17.5" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </span>
+        <span>
+          <strong>WorkerConnect</strong>
+          <small>Local help, professionally listed</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+        <a href="index.html">Home</a>
+        <a href="service.html" class="is-active">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero section">
+      <div class="container reveal-on-load">
+        <span class="eyebrow">Worker listings</span>
+        <h1>Discover nearby service professionals with one clean scroll.</h1>
+        <p>These worker cards are generated dynamically with JavaScript and include direct call and WhatsApp actions for quick communication.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container filters reveal-on-scroll">
+        <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+        <button class="filter-chip" type="button" data-filter="electrician">Electrician</button>
+        <button class="filter-chip" type="button" data-filter="plumber">Plumber</button>
+        <button class="filter-chip" type="button" data-filter="trainer">Trainer</button>
+      </div>
+
+      <div class="container worker-grid" id="workerGrid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 WorkerConnect. Carefully structured listings for dependable local support.</p>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
